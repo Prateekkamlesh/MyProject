@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tinder Clone</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    #app {
+      width: 300px;
+      text-align: center;
+    }
+
+    .user-card {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px; /* Adjust the border-radius for curved corners */
+    }
+
+    .user-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .button {
+      padding: 10px;
+      width: 100px;
+      cursor: pointer;
+      font-weight: bold;
+      border-radius: 5px; /* Adjust the border-radius for curved corners */
+    }
+
+    .button.like {
+      background-color: #4caf50;
+      color: #fff;
+    }
+
+    .button.dislike {
+      background-color: #e53935;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <!-- User Card -->
+    <div class="user-card" id="userCard">
+      <img src="Images/images.png" alt="User" class="user-image">
+      <h2>User 1</h2>
+      <p>Age: 25</p>
+      <p>Hello, I am User 1.</p>
+
+      <!-- Action Buttons -->
+      <div class="buttons">
+        <button class="button dislike" onclick="dislikeUser()">Dislike</button>
+        <button class="button like" onclick="likeUser()">Like</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function dislikeUser() {
+      console.log('User disliked');
+    }
+
+    function likeUser() {
+      console.log('User liked');
+    }
+  </script>
+</body>
+</html>
